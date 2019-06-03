@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">嘉義美食</h1>
+  <div id="flip">王家祖傳本產牛雜湯</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">在有百年歷史的東市場內，生意最好的就屬王家祖傳本產牛雜湯了，牛肝、牛肚、牛雜、牛心、牛肉、牛腰，應有盡有，再點上一碗白飯，便成了在地嘉義人最愛的早餐方式。<br><img src="https://pic.pimg.tw/jay7134/1488443552-1111321394.jpg"></div>
+<p>
+  
+
+</p>
+ <div id="flip1">劉里長雞肉飯</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">說到嘉義，我們自然就會接上雞肉飯，劉里長雞肉飯一份雞肉飯的份量雖然小，但卻肉量十足，淋上醬油，配上酸菜，讓人一碗接著一碗，雞絲肉飯，更是將雞肉的香味最大化，在口中咀嚼，大大滿足。<br><img src="https://pic.pimg.tw/sunyat/1490628009-4272519471_n.jpg"></div>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

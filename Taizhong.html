@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">台中美食</h1>
+  <div id="flip">李海魯肉飯</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">李海魯肉飯從第二市場發跡，開業到現在也有60年，以消魂的焢肉飯聞名，營業時間只有下午到凌晨，只是近幾年有縮短營業時間，但一到了晚上就成為台中舊城區裡的深夜食堂。<br><img src="https://lh3.ggpht.com/bUz5Rr4FppMd29inAPXjxBT3hmMUumYV5-t24IqyiYZ2VsBfELz53b3Gd9-41mHG_kLL5P-lVZyi5nA0yb5VpWglrjeB1Ag=s600"></div>
+<p>
+  
+
+</p>
+  <div id="flip1">滬舍餘味</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">滬舍餘味開業到現在，也即將邁入第十個年頭，創始人來自上海，從小就吃外公做的上海點心，來台灣後苦無尋獲那家鄉中記憶的味道，於是便自己辛苦研發三年的時間，終於成功的做出最接近他記憶中最熟悉的味道，招牌的小籠湯包，更是不輸給鼎泰豐。<br><img src="https://taiwan17go.com/wp-content/uploads/2015/10/2018-09-10_170854-340x221.jpg"></div>
+<p>
+  
+
+</p>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

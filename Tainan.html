@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">台南美食</h1>
+  <div id="flip">二牛牛肉湯</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">說到台南必吃，牛肉湯絕對是其中之一！！
+每回到台南玩    要是沒吃上一碗牛肉湯，就好像沒來過一樣
+安平運河旁有一間招牌很顯眼的二牛牛肉湯   用餐時間生意超好
+最特別的是牛肉加量不加價   每一碗牛肉湯上桌都是實實在在的份量
+還有隱藏版麻油牛腰    數量有限，早來也不見得有，憑運氣才吃得到！！<br><img src="https://tse4.mm.bing.net/th?id=OIP.mqle4Mh8Yw42s6ar9HuoDgHaFH&pid=15.1&P=0&w=227&h=158"></div>
+<p>
+  
+
+</p>
+     <div id="flip1">首席咖啡</div>
+  <div id="panel1" style="color:#0000CD;font-size:28px;">首璽咖啡   周子瑜家開的店  幸運的話還可以遇到本人<br><img src="http://img.4co.tw/pixnet/e7e6f5fb7f47d0ebc1152427adfad658.jpg"></div>
+<p>
+  
+
+</p>
+   <div id="flip2">二哥炒鱔魚</div>
+  <div id="panel2" style="color:#0000CD;font-size:28px;">二哥炒鱔魚位於海安路上，大口胃沙茶爐斜對面，他們加炒的醬汁滋味酸甜之外，夾帶著鮮明的蔥蒜香，而且通通都和鱔魚合為一體，跟意麵搭配在一起吃，越吃越是涮嘴開胃，而且火侯拿捏得剛剛好，吃起來不會太生，但是卻又保有鱔魚本身的彈性以及甜味，因此是想吃鱔魚意麵時的首選店家。<br><img src="https://4.bp.blogspot.com/-OLbk-rtq8FQ/WI4AOyM1BOI/AAAAAAAAXbg/Wy9u7Rpw2Og5ihBYBH5CsG4DEbrdIqeDwCLcB/s640/LF2A0971.jpg"></div>
+ <a href="#" class="goTop">↑GO TOP</a>
+
+</body>
+</html>

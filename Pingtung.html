@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">屏東美食</h1>
+
+  <div id="flip">正老牌屏東肉圓</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">這家飄香80年的老字號「正老牌屏東肉圓」每日限量供應清蒸肉圓 只從大清早賣到中午打烊 店家維持傳統手工包肉圓，外皮使用在來米和蕃薯粉調製  口感薄厚適中 Q彈軟嫩 內餡的肉塊是以新鮮的豬後腿肉及自己秘方香料進行醃製，使用的肉質多了一股鹹香滋味 若多點一碗大骨熬煮湯頭的魚丸湯和豬血湯，更能體會到屏東道地樸實的古早風味<br><img src="http://g.udn.com.tw/upfiles/B_SS/ssss01298/PSN_PHOTO/796/f_11121796_1.JPG"></div>
+<p>
+  
+
+</p>
+  <div id="flip1">紅茶老店</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">紅茶老店的位置就在廣東路的巷弄內
+
+因為老闆娘愛喝紅茶，所以在自己門口就賣起了紅茶，一賣就是30多年
+屏東紅茶老店
+而且真的是用茶葉沖泡出的紅茶，沒有香精也沒有其他不良添加物
+
+之前有看到民視的報導，好像糖漿和冰塊也是老闆娘自己製作的
+
+攤子上有一個鈴鐺，沒看到老闆娘的話搖一搖鈴鐺就會出現啦<br><img src="http://g.udn.com.tw/upfiles/B_SS/ssss01298/PSN_PHOTO/706/f_19092706_1.JPG"></div>
+<p>
+  
+
+</p>
+  <div id="flip2">老夫子甜不辣</div>
+  <div id="panel2" style="color: #0000CD;font-size:28px;">老夫子甜不辣位於熱鬧的太平洋百貨後方的林森路上，常常我們逛完百貨公司，就會來到這裡打打牙祭。這裡的東西超便宜，吃了這麼多年沒漲過價格，維持著每樣10元價格。屏東人喜歡買來當正餐或當下午茶的點心。九宮格的檯子裡頭放了各式各樣的黑輪，除了水煮黑輪之外，幾年前開始販賣炸黑輪，來迎合顧客的口味。整體來說 充滿屏東道地的味道，是來屏東必吃的美食之一。<br><img src="https://attach.mobile01.com/waypoint/mobile01-e32478776f3491fc85737d6492c3775b.jpg"></div>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

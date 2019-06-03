@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+	<a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">桃園美食</h1>
+  <div id="flip">京采日式飯館</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">京采日式飯館位於桃園區龜山大同路 
+喜歡吃日式料理的朋友有福了 這間日式料理店不止位置隱密 價格更是便宜 份量又大 味道又佳 CP值爆表的程度~
+店內主要就是日式料理 因此常見的丼飯、生魚片、炒烏龍麵這都有 而且他的價格實在便宜的很誇張 
+豬排丼飯竟然不到100元 此外湯和飲料還可以一直裝!!
+而且這碗日式豬排的份量也不是普通的份量 他的碗比一直手掌還要大!!豬排的量也是超級多 厚度竟然還高達2公分以上
+簡直是撿到寶阿 此外他們的丼飯淋醬跟一般採用洋蔥的做法不一樣而是採用高麗菜，吃起來像是滷菜的味道 飯的口感也很好，加上那個醬汁極佳 總之這家京采日式飯館真的是來桃園必定要朝聖的美食地點<br><img src="https://pic.pimg.tw/nixojov/1486344859-3492686228_n.jpg"></div>
+<p>
+	
+</p>
+  <div id="flip1">Howfun好飯食堂</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">Howfun好飯石堂位在桃園林口長庚醫院對面的林口環球A8的2樓
+西班牙料理中大家最常聽到的就是西班牙燉飯 今天要介紹的這一間餐廳 他們的西班牙燉飯則是用牛排舖的滿滿
+有如日式牛肉丼飯一樣 但食材更高級更美味 味道也更優 店內採用木頭式的裝潢，搭配一點藍、紅、黃、白的椅子
+呈現出多彩繽紛的設計感 跟一般的西式料理餐廳截然不同的感受 比較接近歐式鄉村的風格 
+說到西班牙大家一定會想到燉飯 那燉飯就是店內的主打招牌，此外店家還研究出多種口味
+從雞肉、海鮮、牛排到龍蝦都有~然後這裡的羅勒沙朗好飯的味道絕對不輸給海鮮飯牛排處理的恰當好處
+而且帶有鮮甜味 米飯粒粒分明外蘿勒的香氣以及鹹香感 更是令許多人入迷 味道真的是極佳 來這必點<br><img src="https://pic.pimg.tw/nixojov/1479187982-756305777_n.jpg"></div>
+<p>
+	
+</p>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

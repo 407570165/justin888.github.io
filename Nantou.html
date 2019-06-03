@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">南投美食</h1>
+  <div id="flip">方愫馨草屯手工麻糬 </div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">方愫馨的緣起，是在一個純樸的草屯小鎮內，由方老先生每天騎著腳踏車載著麻糬，在鎮內大街小巷四處叫賣開始，至今已走過50個年頭。現在品項有10種口味：招牌麻糬、花生麻糬、紅豆麻糬、芝麻麻糬、綠豆麻糬、芋頭麻糬、綠茶麻糬、香芋花生麻糬、紫米鹹麻糬以及黑糖綜合麻糬。<br><img src="https://tse3.mm.bing.net/th?id=OIP.TyzSPAJYH_aD_ax_cPfW5QEsB7&pid=Api&P=0&w=304&h=125"></div>
+<p>
+	
+
+</p>
+  <div id="flip1">正典牛乳大王</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">立方體的冰淇淋被兩片餅乾夾著，這就是正典牛乳大王招牌的冰磚，冰磚有
+花生、桂圓、咖啡、巧克力、牛奶的口味可供選擇，每塊25元。
+<br><img src="https://media-cdn.tripadvisor.com/media/photo-s/08/a9/6d/bd/caption.jpg"></div>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

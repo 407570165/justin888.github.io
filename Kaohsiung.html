@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">高雄美食</h1>
+  <div id="flip">鳳山鹹酥雞</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">只要想到高雄鳳山中華夜市裡面超人氣小吃，除了老張愛玉冰、永昌綠豆湯之外，一定要朝聖的就是的中華市讚鹹酥雞，常常在鳳山美食小吃比賽中得名，只要經過幾乎都是大排長龍，再加上部份炸串只要10元的親民價，不少老鳳山人晚上想到的鹹酥雞第一間就是它。即使在寒風中等待排隊，也心甘情願。<br><img src="https://farm2.staticflickr.com/1480/25398561271_b24235f6fc_c.jpg"></div>
+<p>
+  
+
+</p>
+  <div id="flip1">阿博豆漿店</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">營業時間是晚上八點半到早上八點半，蛋餅皮是用麵粉漿做的，現點現做，吃起來厚實有飽足感，放涼了也很好吃，這種風格的蛋餅之前有吃過西子灣的阿姨蛋餅。除了各種口位的蛋餅外，還有超人氣的甜不辣，炸的酥酥脆脆的，魚漿的成份感覺也很多，不會有太多的澱粉感，<br><img src="https://pic.pimg.tw/dmax7685/1528810391-3463670346_n.jpg"></div>
+<p>
+  
+
+</p>
+  <div id="flip2">左營蔥肉餡餅</div>
+  <div id="panel2" style="color: #0000CD;font-size:28px;">左營超夯的U.KI蔥肉餡餅，連CNN主播都來吃的U.KI蔥肉餡餅
+左營阿兵哥最愛的蔥肉餅下午茶，左營美食必吃
+現在也成為大眾的庶民下午茶必吃美食<br><img src="https://i2.wp.com/img.nellydyu.tw/uploads/20190318100433_64.jpg?zoom=1.5&resize=860%2C645&ssl=1"></div>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

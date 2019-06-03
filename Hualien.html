@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">花蓮美食</h1>
+  <div id="flip">五霸焦糖包心粉圓</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;"> 『五霸焦糖包心粉圓』位在花蓮市中華路與博愛街的交叉口處，隔壁是正宗包心粉圓專賣店，剛好也是賣包心粉圓的店，不過『五霸焦糖包心粉圓』的招牌是顯眼的黃色，另一家則是紫色招牌。 當初老闆會取名為五霸，是因為那時冰很大一碗，吃完後就很有飽足感，取自有飽的台語諧音<br><img src="https://img.yoti.life/uploads/20160411104238_51.jpg"></div>
+<p>
+  
+
+</p>
+  <div id="flip1"> 海埔蚵仔煎</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">各位不管是翻旅遊書或是看網路上，花蓮著名的蚵仔煎小吃一定會推薦這一家！ 只單單只靠賣著蚵仔煎和蛤仔湯，營業時間經常座無虛席，沒特別排隊可是吃不到的！<br><img src="https://img.yoti.life/uploads/20160410142231_34.jpg"></div>
+<p>
+  
+
+</p>
+  <div id="flip2">Power古巴三明治</div>
+  <div id="panel2" style="color: #0000CD;font-size:28px;">電影五星主廚快餐車中的古巴三明治，現在花蓮也吃得到囉！ 每日限量現點現做，雖然沒什麼人在排隊，但電話訂購或外送的人可是很多的，建議三點一開店就開始打電話，宵夜時段想吃的話也可以電話預約，老闆會貼心的開到宵夜時段<br><img src="https://img.yoti.life/uploads/20180217154512_52.jpg"></div>
+ <a href="#" class="goTop">↑GO TOP</a>
+</html>

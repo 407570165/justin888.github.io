@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">台東美食</h1>
+  <div id="flip">濟洲冰舖</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">夏天吃冰、冬天喝熱甜湯，位於正氣路上阿水伯魯肉飯隔壁，人氣麻糬剉冰配上手工黑糖粉粿、手工芋圓，充滿創意的冰品非常吸引人，還有冬季限定酥皮鯛魚燒，濟州冰舖總是滿座人潮。<br><img src="https://scontent-mrs2-1.cdninstagram.com/vp/b47ad4bfd89e1b2ff17e7b14b078004d/5D8DF762/t51.2885-15/e35/58939993_444029023036110_8159052697727815860_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&se=8"></div>
+<p>
+  
+
+</p>
+ <div id="flip1">榕樹下米苔目 </div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">「榕樹下米苔目」顧名思義，以前其實是開在市場旁安慶街的榕樹下，小小的一個無名攤子從一大早就開始滾著熱湯，給出外的街訪鄰居們端上一碗香噴噴的米苔目當早點，60多年過去，許多朋友都是從小吃到大的。話說，無論是在哪個鄉鎮，在榕樹下吃碗麵好像是許多台灣人小時候的記憶，榕樹下麵攤和古早味的懷念一定是緊密相連分不開的！<br><img src="https://i2.wp.com/www.zztaitung.com/wp-content/uploads/2016/04/%E5%8F%B0%E6%9D%B1%E7%BE%8E%E9%A3%9F%E6%A6%95%E6%A8%B9%E4%B8%8B%E7%B1%B3%E8%8B%94%E7%9B%AE-8.jpg?w=800"></div>
+<p>
+  
+
+</p>
+ <div id="flip2">金花軒卑南肉包店</div>
+  <div id="panel2" style="color: #0000CD;font-size:28px;">知名的台東卑南肉包！也就是每天都大排長龍的『金花軒卑南包仔店』，其招牌就是筍丁肉包、高麗菜包和芋頭紅豆包…等包子饅頭，美味到小薛一吃便成了老主顧！<br><img src="https://i0.wp.com/f.share.photo.xuite.net/kopapa1116/1f51154/18989480/1027290028_o.jpg"></div>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: 
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+</style>
+<body>
+<h1 class="title-text">宜蘭美食</h1>
+ <button id="stop">停止</button>
+  <div id="flip">元祖當歸羊肉湯</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">店內的種類都算是比較適合冬天進補的麻油和藥燉
+甚至是當歸系列的餐點一杯羊肉湯，至少有三分之一的容量都是裝滿了羊肉。<br><img src="https://pic.pimg.tw/nixojov/1396142537-781537867_n.jpg"></div>
+<li>The first-one:</li>
+ <button id="stop">停止</button>
+  <div id="flip1">綠海咖啡</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">綠海咖啡坊是親子餐廳，但嚴格說起來應該是親子友善餐廳，因為綠海咖啡坊沒有一般親子餐廳常見的遊具或是球池，但是在門口的帶位等候室內，除了一般常見的書報雜誌外，還設有許多童書、兒童繪畫版跟蓋印區，讓小朋友在等待的過程中仍然有事可以忙，這一點對於時常帶小孩外出用餐的家庭非常有感。當然也有顧客帶家中的毛小孩來綠海咖啡坊用餐，
+中小型的寵物只要願意待在籠子或袋子內就歡迎進來<br><img src="https://i1.wp.com/boo2k.com/wp-content/uploads/images/69bb9186621d_133E9/IMG_5219.jpg?resize=750%2C500&ssl=1"></div>
+<li>The first-one:</li>
+ <button id="stop">停止</button>
+  <div id="flip2">北門綠豆沙牛乳</div>
+  <div id="panel2" style="color: #0000CD;font-size:28px;">這家真的是宜蘭市區必來必吃的店家，生意非常的好，常常可以看到大排長龍的人潮!綠豆沙牛奶、芋頭沙牛奶、酪梨牛奶等都不錯喝~
+果汁類的價格當然相對的價位就比較高，平均價格落在50-60元左右。<br><img src="https://pic.pimg.tw/kakakuksk/1442342431-2745993054_n.jpg"></div>
+<li>The first-one:</li>
+</body>
+</html>

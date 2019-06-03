@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+	<a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">雲林美食</h1>
+  <div id="flip">阿嬤私房菜</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">說到雲林，就會想到古坑的咖啡，阿嬤私房菜有獨特的咖啡桶仔雞，用咖啡醃製提香，有一種不同於一班桶仔雞的香味，皮脆而蘇，咖啡的香氣溢滿而出，滿齒留香。<br><img src="https://b.share.photo.xuite.net/hsis68/1ba8ac6/19585782/1093447632_l.jpg"></div>
+<p>
+	
+</p>
+  <div id="flip1">老受鴨肉飯</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">木製的桌椅，古色古香的室內設計，充滿著傳統的氣息，就算是在非用餐時段，也是有著滿滿的人潮，為躲避炎炎日照，躲進這充滿冷氣的小屋哩，點上一碗鵝肉飯，盛事人生一大享受。<br><img src="http://foritech-tlife.cloudapp.net/wp-content/uploads/2017/08/1707_091_taste-the-city-05.jpg"></div>
+<p>
+	
+</p>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

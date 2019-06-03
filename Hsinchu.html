@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+	<a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">新竹美食</h1>
+  <div id="flip">員林江爌肉飯</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">員林江爌肉飯 位於新竹西大路 是只有內行人才知道的超級美味小吃店
+雖然店家的室內空間比較昏暗而且也比較簡陋 但是食物真的是讚不絕口 菜單以爌肉飯、魯肉飯為主 另外也有便當的模式可以選擇
+爌肉飯小碗的35元 有一塊肥瘦非常漂亮的焢肉 而底下則是淋有魯汁的白飯 他的白飯看起來粒粒分明 光是用看的就流口水了 
+一吃下去 果然沒有讓人失望 口感非常的好 這種粒粒分明帶有Q彈的白飯非常的美味 而他的焢肉不會太爛也不會太硬
+而且瘦肥非常漂亮 口感和味道都表現出色 來新竹一定要來吃吃看這家 保證你收穫滿滿<br><img src="https://pic.pimg.tw/nixojov/1554950101-1026576175_n.jpg"></div>
+<p>
+	
+</p>
+  <div id="flip1">She's豆腐花</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">She's豆腐花 位於竹北市嘉豐南路 是一家你吃一口就會愛上的豆花店
+這間店店家室內空間不大但整體的環境非常的舒適 而且有簡單的裝潢 整體的環境算是不錯的
+這裡以豆花為主外，還有賣杏仁豆腐、豆奶類 甚至是熱甜品也有
+這家店的招牌是杏仁豆腐 雖然很多人杏仁豆腐吃起來都會有一種怪味 但是這家店的完全不會!!
+挖一口杏仁豆腐非常的有彈性 而且一口吃下，他的質地非常的好 非常的順口、滑嫩 再搭配他們特製的糖水 喝起來甜度和味道都表現的非常的好
+這家也是來新竹玩必來的美食店 吃完保證讓你滿臉笑容地走出去<br><img src="https://pic.pimg.tw/nixojov/1520647121-3227213649_n.jpg"></div>
+<p>
+	
+</p>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

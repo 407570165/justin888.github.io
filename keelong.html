@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+<h1 class="title-text">基隆美食</h1>
+  <a href="web finalexam.html" class="goback">回首頁</a>
+  <div id="flip">基隆乾麵</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">基隆乾麵 位在基隆市 他的分佈有兩家 一家在孝三路 一家在義二路 台灣知名的乾麵 除了當伴手禮外 現吃才真正夠味 基隆販賣乾麵的攤雖然特別多 但是這家基隆乾麵就是不太一樣 白淨的麵條拌上油蔥與豬油加上豆芽菜 隨意挑選淋上一點辣油 醬油或甜辣醬 再搭配幾盤小菜及餛飩湯 不到百元就吃的超滿足<br><img src="https://keelung-for-a-walk.com/wp-content/uploads/2018/04/4.Keelung-Dry-Noodle.jpg-%E7%9A%84%E5%89%AF%E6%9C%AC_%E7%BB%93%E6%9E%9C-300x198.jpg"></div>
+<p>
+  
+
+</p>
+
+  <div id="flip1">日式傳統點心</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">日式傳統點心 位在基隆市 他的分佈有兩家 一家在孝三路 一家在義二路 各式各樣的掌心大甜食整齊的放在玻璃櫃內 是日治時期後開始流行的糕餅 現在看更有種復古的味道 小叮噹最愛的銅鑼燒 羊羹 紅豆麻糬 兩三個銅板即可滿足那個缺糖的胃。<br><img src="https://keelung-for-a-walk.com/wp-content/uploads/2018/04/Nagoya-dorayaki-1-1-300x200.jpg"></div>
+<p>
+  
+
+</p>
+  <div id="flip2">泡泡冰</div>
+  <div id="panel2" style="color: #0000CD;font-size:28px;">泡泡冰 位在基隆的廟口夜市 是去基隆夜市必買的甜點 有點像剉冰又像冰淇淋的口感 基隆泡泡冰以人工湯匙攪拌的方式將冰與調味原料混和 是值得一試的特色甜品 一杯大概50元台幣左右<br><img src="https://keelung-for-a-walk.com/wp-content/uploads/2018/04/18.Bubble-Ice-Taiwanese-Ice-Slush_%E7%BB%93%E6%9E%9C-300x200.jpg"></div>
+  <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

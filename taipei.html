@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<h1 class="title-text">台北美食</h1>
+<a href="web finalexam.html" class="goback">回首頁</a>
+  <div id="flip">台北SOMA特調飲品</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">提到台北最強手搖杯，許多人第一個推薦的就是東區超人氣「Soma特調飲品」！店內以特調飲、高山茶、茶歐蕾三種系列為主，其中又以茶歐蕾系列為主打飲品，第一次光顧可以選擇「原味茶歐雷」嚐鮮，茶的部分使用斯里蘭卡、印度和台灣等三個產地的茶葉混合調配而成，而奶則是使用脫脂奶粉取代鮮奶，茶香撲鼻、奶味濃郁，形成獨特迷人的口味。
+店名SOMA是舊金山一個充滿各種文化藝術的小區，老闆也希望自己研發的飲品以這個概念出發，老闆曾在法國藍帶廚藝學院學習，回台後決定將台灣茶飲的特色更精緻化，因此店內也選用許多台灣的食材作物，如台東的洛神花、雲林的桑椹。<br><img src="http://6.blog.xuite.net/6/8/1/6/15336743/blog_1163313/txt/473004654/0.jpg"></div>
+<p>
+  
+
+</p>
+  <div id="flip1">台北教父牛排</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">台北教父牛排 位在台北市中山區 是米其林一星餐廳 是個適合久久吃一次的高級餐廳  有時候想要犒賞自己的時候 教父牛排就是你最好的選擇
+餐前麵包味道很香 外皮烤得酥脆 內裡鬆軟又不失嚼勁 開胃菜以海鮮為主 因為有蠻多選擇 那今天就介紹最推的開胃菜 干貝肉質鮮嫩 滋味甘甜 沒有過多的調味 呈現出食材的鮮美 接下來就是重頭戲 這家店的招牌 美國特選老饕牛排 它的牛排外焦內嫩 熟度掌握的剛剛好 旁邊還有附芥末籽醬跟海鹽搭配 使牛排多了些變化 然後牛排旁邊的烤蒜頭雖然看起來不太起眼 但這卻是這道菜不可或缺的食材 搭上牛排一起吃更有相輔相成的成效<br><img src="https://media-cdn.tripadvisor.com/media/photo-s/0b/1a/1b/f0/caption.jpg"></div>
+<p>
+  
+
+</p>
+
+  <div id="flip2">天天利美食坊</div>
+  <div id="panel2" style="color: #0000CD;font-size:28px;">天天利美食坊 位在台北市萬華區 是家來到台北西門町必吃的平價美食 適合想吃美食卻又不想花太多錢的人，他的招牌就是滷肉飯上面加上一顆半熟蛋 把蛋黃弄破跟滷肉飯伴在一起吃 真的是人間美味 而且吃起來還有一種阿嬤的味道 小時候最喜歡吃的就是阿嬤煮的滷肉飯了 如果吃不飽的話還有很多好吃的選項可以任君挑選 也都很美味喔<br><img src="https://pic.pimg.tw/anrine910070/1519112892-2651048618.jpg"></div>
+  <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>

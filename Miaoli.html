@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.goTop').fadeIn();
+    } else {
+      $('.goTop').fadeOut();
+    }
+  });
+  $('.go').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+  $("#flip").click(function(){
+      $("#panel").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  $("#flip1").click(function(){
+      $("#panel1").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle(3500);
+  });
+  $("#stop").click(function(){
+    $("#panel2").stop();
+  });
+   $("#go").click(function(){
+      $("p").toggle();
+  });
+});
+</script>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: #1E90FF;
+  }
+  .title-text{
+    font-size: 80px;
+    color: #c6faf1;
+    font-family: fantasy;
+  }
+  .letter-text{
+    font-size: 30px;
+    color:  #0000CD;
+    font-family: sans-serif;
+  }
+      #panel2, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel2 {
+    padding: 36px;
+    display: none;
+    }
+    #panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel1 {
+    padding: 36px;
+    display: none;
+    }
+    #panel1, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color:#FFBB66;
+    border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:Microsoft JhengHei;
+    }
+    #panel {
+    padding: 36px;
+    display: none;
+    }
+    li {
+      color:#FFFFFF;
+      font-size:28px;
+      font-family:serif;
+    }
+        .goTop{
+ border-bottom:1px solid #dddddd;
+    font-size:20px;
+    font-family:fantasy;
+}
+  .goTop:hover{
+  background:#FA8072#;
+  border-bottom:1px solid #dddddd;
+}
+  .goback{
+  border-bottom:1px solid #dddddd;
+  padding:10px;
+  text-align:center;
+  background:#CCCCFF;
+  font-weight:bold;
+  color:#FF0000;
+  position:absolute;
+  left: 1000px;
+   top: 120px;
+}
+</style>
+<body>
+	<a href="web finalexam.html" class="goback">回首頁</a>
+<h1 class="title-text">苗栗美食</h1>
+  <div id="flip">Nu Pasta苗栗中正店</div>
+  <div id="panel" style="color: #0000CD;font-size:28px;">Nu Pasta 位在苗栗市中正路上 在頂好的斜對面 
+這間「Nu Pasta」的餐點種類很多 11:30-20:00全天候都有供應餐點  除了義大利麵、燉飯、千層披薩外，還有兒童餐、下午茶還有蛋奶素餐點，價格也算親民，
+若是想要吃的有飽足感，推薦可以升級套餐，因為套餐的內容都還挺有誠意的 CP值算滿高的 若是要聚餐的話這家是你最好的選擇<br><img src="https://i0.wp.com/img.vivawei.tw/20180705130945_13.jpg"></div>
+<p>
+	
+</p>
+  <div id="flip1">清水茶香</div>
+  <div id="panel1" style="color: #0000CD;font-size:28px;">清水茶香 位於苗栗市府前路 彩色鉛筆7-11斜對面 店內走的是復古風的裝潢，還有值得當作拍照背景的美美花磚牆
+裡面有賣清水茶香類、清水果香類、清水奶香類、深功炒糖類、雪岩好茶類、清涼冰沙類這幾種，飲品價格由25-70元之間不等
+黑糖珍珠鮮奶是店家的招牌之一，這杯飲料的甜度主要來自於黑糖珍珠，手炒的黑糖珍珠稍微偏甜，但是很適合搭配微糖的鮮奶茶為基底，QQ的珍珠口感配上濃純的鮮奶茶，甜而不膩，真的是超好喝的
+店家選用的是開元食品的紐西蘭特級牛乳～現場可以看到店家手炒黑糖珍珠，會是先將黑糖炒過以後再加入煮好的珍珠，黑糖珍珠若是超過2.5小時沒有售完則會重新製作一鍋。
+古早味的綠豆沙也是店家的招牌，使用的是台糖的二砂糖熬煮冰鎮再研磨過篩，最後再製成冰沙～所以他們的綠豆沙口感比較細緻，不會吃到帶殼的沙沙口感～這樣的綠豆沙，就是夏日消暑飲品的首選
+總之來苗栗想喝飲料的時候 一定要來這家買 保證讓你喝完一杯還想再來10杯<br><img src="https://img.vivawei.tw/20190511221839_87.jpg"></div>
+<p>
+	
+</p>
+ <a href="#" class="goTop">↑GO TOP</a>
+</body>
+</html>
